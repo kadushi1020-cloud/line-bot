@@ -25,7 +25,7 @@ def callback():
 @handler.add(MessageEvent, message=TextMessageContent)
 def handle_message(event):
     user_input = event.message.text
-    prompt = f"""あなたは塾の先生です。以下のキーワードをもとに、塾の通知表・成績表に書く所見を100字程度で書いてください。
+    prompt = f"""あなたは塾の先生です。以下のキーワードをもとに、塾の通知表・成績表に書く所見を60字程度で書いてください。
 小学生から高校生まで対応し、学年・科目・評価に合わせた自然な日本語で書いてください。
 箇条書きや記号は使わず、文章で書いてください。
 
